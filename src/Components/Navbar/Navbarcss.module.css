@@ -1,0 +1,84 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  section {
+    display: grid;
+    /* place-items: center; */
+    width: 100%;
+    height: 100vh;
+    font-size: 32px;
+    font-weight: bold;
+    border: 1px solid yellow
+  }
+
+  #about {
+    margin-top: -80px;
+  }
+
+  #projects,
+  #contact {
+    color: #3b3b3c;
+    background: #eaf2fa;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    font-weight: bold;
+    top: -5px;
+    color: rgb(126,126,129);
+    z-index: 2;
+    height: 70px;
+    min-height: 70px;
+    width: "100%";
+    background-color: rgb(32,32,42);
+    padding: 0 1rem;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  }
+
+  .nav__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+  }
+
+  .nav__container__actions {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    padding-left: 50px;
+    flex: 1;
+    padding-right: 3%
+  }
+
+  .active {
+    font-weight: bolder;
+    color: #eaf2fa;
+  }
+
+  .nav__container__actions ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+    list-style: none;
+    padding: 0;
+  }
+
+   li {
+    cursor: pointer;
+  }
+
+  li:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+  }

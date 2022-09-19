@@ -1,0 +1,21 @@
+.art-code {
+    font-family: 'Courier Prime', monospace;
+    color: var(--color-primary-0);
+    text-shadow: 1px 1px 5px var(--color-primary-1);
+  }
+  .art-code i {
+    font-style: normal;
+    color: var(--color-primary-4);
+    text-shadow: none;
+  }
+  .art-code span {
+    color: var(--color-text-0);
+    text-shadow: none;
+  }
+  .art-code span:hover {
+    font-style: italic;
+    /* color: var(--color-primary-3); */
+  }
+  .art-lg-text {
+    font-size: 16px;
+  }

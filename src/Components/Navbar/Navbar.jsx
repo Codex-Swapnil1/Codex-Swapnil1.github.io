@@ -4,7 +4,7 @@ import BasicMenu from "./BasicMenu";
 import { NavProfile } from "./NavProfile";
 import { Media } from 'react-breakpoints';
 import { Home } from "../../Pages/Home";
-import { About } from "../../Pages/About";
+import  About  from "../../Pages/About";
 import { Skills } from "../../Pages/Skills";
 import Education from "../../Pages/Education";
 import Experience from "../../Pages/Experience";

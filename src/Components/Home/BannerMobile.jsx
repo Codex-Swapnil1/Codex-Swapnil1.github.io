@@ -7,10 +7,10 @@ export const BannerMobile = () => {
     marginTop:"50px",
     padding:"1% 3%"
     }}>
-    <div>
+    <div >
         <Code/>
     </div>
-      <div style={{ maxWidth:"350px", marginTop:"40px"}}>
+      <div style={{ maxWidth:"350px", paddingTop:"40px",margin:"auto"}}>
    <img  src="./pngwing.com.png" alt="programmer" width="100%" />
       </div>
       </div>

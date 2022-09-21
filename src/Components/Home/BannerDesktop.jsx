@@ -5,7 +5,6 @@ export const BannerDesktop = () => {
   return (
     <div style={{display:"flex",
     justifyContent:"space-between",
-    marginTop:"50px",
     padding:"1% 3%"
     }}>
         <div>

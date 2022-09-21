@@ -1,0 +1,10 @@
+.css-tkn350-MuiTabs-root {
+    overflow: hidden;
+    min-height: 48px;
+    max-width: 480px;
+    -webkit-overflow-scrolling: touch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -7,11 +6,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Divider } from '@mui/material';
 import { Link } from "react-scroll";
 import navstyle from "./Navbarcss.module.css";
+import { Button } from '@mui/joy';
+import FileSaver from 'file-saver';
+import { Scrollbars } from 'react-custom-scrollbars'
 
 const options = [
    {id: 1, name1:"Home",name2:"home"} ,
    {id: 2, name1:"About",name2:"about"} ,
-   {id: 3, name1:"Skills",name2: "skills"} ,
+   {id: 3, name1:"TechStack",name2: "techstack"} ,
    {id: 4, name1:"Education",name2:"education"} ,
    {id: 5, name1:"Experience",name2:"experience"} ,
    {id: 6, name1:"Projects",name2:"projects"} ,
@@ -29,7 +31,12 @@ export default function BasicMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
+  const saveFile = () => {
+    FileSaver.saveAs(
+      process.env.PUBLIC_URL + "/resources/resume.pdf",
+      "Swapnilresume.pdf"
+    );
+    };
   return (
     <div>
       <MenuIcon
@@ -63,15 +70,23 @@ export default function BasicMenu() {
           },
         }}
       >
+      <Scrollbars style={{height: 250,}}>
         {options.map((option) => (
-          <MenuItem key={option.id} onClick={handleClose}>
+          <MenuItem key={option.id} sx={{fontSize:"16px"}} onClick={handleClose}>
           <Link activeClass={navstyle.active} smooth spy to={option.name2}>
             {option.name1}
           </Link>
-          <Divider/>
           </MenuItem>
-
         ))}
+        <Divider/>
+        <MenuItem onClick={handleClose}>
+        <Button style={{color:"lightgray",
+            boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}}
+            onClick={saveFile}>
+            Resume
+        </Button>
+        </MenuItem>
+        </Scrollbars>
       </Menu>
     </div>
   );

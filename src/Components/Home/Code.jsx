@@ -2,6 +2,7 @@ import React from 'react'
 import Typed from 'react-typed';
 // for blinking cursor
 import 'react-typed/dist/animatedCursor.css';
+import SocialMedia from './SocialMedia';
 const Code = () => {
 
 const Lines = [
@@ -35,10 +36,11 @@ const Lines = [
         loopCount={0}
         showCursor
         cursorChar='|'
-        style={{color:"white"}}
+        style={{color:"lightblue"}}
       />{' '}
       &lt;/<i style={{color:"red"}}>code</i>&gt;
     </div>
+    <SocialMedia/>
     </div>
   )
 }

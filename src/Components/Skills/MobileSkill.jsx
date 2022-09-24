@@ -3,12 +3,9 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import FrontEndSkill from './FrontEndSkill';
-import BackEndSkill from './BackEndSkill';
-import Deployments from './Deployments';
-import Uilab from './Uilab';
-import ToolsAndPlatform from './ToolsAndPlatform';
 // import style from "./tabmobile.module.css";
+import TechnicalSkills from './TechnicalSkills';
+import SoftSkills from './SoftSkills';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function SkillsMobile() {
+export default function MobileSkill() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -52,14 +49,13 @@ export default function SkillsMobile() {
 
   return (
     <Box sx={{ width: "100%" , justifyContent:"center", margin:"auto"}}>
-      <Box
-       sx={{ maxWidth: { xs: 320 , sm: 480},
+    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", paddingBottom:"30px"}}>Skills</h1>
+      <Box sx={{  maxWidth: { xs: 320 , sm: 480},
         backgroundColor:"black",
         border:"1px solid gray",
         justifyContent:"center",
          margin:"auto",
-         boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"
-          }}>
+         boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px" }}>
         <Tabs
           value={value}
         onChange={handleChange}
@@ -68,27 +64,15 @@ export default function SkillsMobile() {
         allowScrollButtonsMobile
         aria-label="scrollable force tabs example"
         >
-          <Tab sx={{color:"lightgray"}} label="FrontEnd" {...a11yProps(0)} />
-          <Tab sx={{color:"lightgray"}} label="BackEnd" {...a11yProps(1)} />
-          <Tab sx={{color:"lightgray"}} label="Ui Library" {...a11yProps(2)} />
-          <Tab sx={{color:"lightgray"}} label="Deployments" {...a11yProps(3)} />
-          <Tab sx={{color:"lightgray"}} label="Tools and Platform" {...a11yProps(4)} />
+          <Tab sx={{color:"lightgray"}} label="Technical Skills" {...a11yProps(0)} />
+          <Tab sx={{color:"lightgray"}} label="Soft Skill" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <FrontEndSkill/>
+        <TechnicalSkills/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <BackEndSkill/>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <Deployments/>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Uilab/>
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        <ToolsAndPlatform/>
+        <SoftSkills/>
       </TabPanel>
     </Box>
   );

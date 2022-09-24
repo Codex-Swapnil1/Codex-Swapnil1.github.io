@@ -6,10 +6,10 @@ import { Media } from 'react-breakpoints';
 import { Home } from "../../Pages/Home";
 import  About  from "../../Pages/About";
 import { TechStack } from "../../Pages/TeckStack";
-import Education from "../../Pages/Education";
-import Experience from "../../Pages/Experience";
 import { Projects } from "../../Pages/Projects";
 import { Contact } from "../../Pages/Contact";
+import { Skills } from "../../Pages/Skills";
+
 
 export default function NavBar() {
   return (
@@ -31,8 +31,7 @@ export default function NavBar() {
 
       <section id="about"><About/></section>
       <section id="techstack"><TechStack/></section>
-      <section id="education"><Education/></section>
-      <section id="experience"><Experience/></section>
+      <section id="skills"><Skills/></section>
       <section id="projects"><Projects/></section>
       <section id="contact"><Contact/></section>
     </div>

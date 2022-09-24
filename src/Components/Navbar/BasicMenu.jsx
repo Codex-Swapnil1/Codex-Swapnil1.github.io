@@ -14,10 +14,9 @@ const options = [
    {id: 1, name1:"Home",name2:"home"} ,
    {id: 2, name1:"About",name2:"about"} ,
    {id: 3, name1:"TechStack",name2: "techstack"} ,
-   {id: 4, name1:"Education",name2:"education"} ,
-   {id: 5, name1:"Experience",name2:"experience"} ,
-   {id: 6, name1:"Projects",name2:"projects"} ,
-   {id: 7, name1:"Contact",name2:"contact"} ,
+   {id: 4, name1:"Skills",name2:"skills"} ,
+   {id: 5, name1:"Projects",name2:"projects"} ,
+   {id: 6, name1:"Contact",name2:"contact"} ,
 ];
 
 const ITEM_HEIGHT = 60;
@@ -49,7 +48,7 @@ export default function BasicMenu() {
         onClick={handleClick}
         sx={{paddingRight:"30px"}}
       >
-        <MoreVertIcon  />
+        <MoreVertIcon size="xl"  />
       </MenuIcon>
       <Menu
         id="long-menu"

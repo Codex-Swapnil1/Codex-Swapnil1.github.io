@@ -30,13 +30,8 @@ export const NavbarMenu = () => {
               </Link>
             </li>
             <li>
-              <Link activeClass={navstyle.active} smooth spy to="education">
-              Education
-              </Link>
-            </li>
-            <li>
-              <Link activeClass={navstyle.active} smooth spy to="experience">
-              Experience
+              <Link activeClass={navstyle.active} smooth spy to="skills">
+              Skills
               </Link>
             </li>
             <li>

@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div>Projects
     <DesktopProject/>
-    <ProjectCard/>
+    {/* <ProjectCard/> */}
     </div>
   )
 }

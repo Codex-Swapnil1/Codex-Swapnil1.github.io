@@ -44,7 +44,7 @@
                 "Material UI",
                 "React Redux",
                 "React DOM",
-                "netlify",
+                "Netlify",
                 "CSS",
                 "E-commerce"
             ]
@@ -67,7 +67,7 @@
             "tags" : [
                 "JavaScript",
                 "HTML",
-                "netlify",
+                "Netlify",
                 "CSS",
                 "E-commerce"
             ]
@@ -90,7 +90,7 @@
             "tags" : [
                 "JavaScript",
                 "HTML",
-                "netlify",
+                "Netlify",
                 "CSS",
                 "E-commerce",
                 "React",

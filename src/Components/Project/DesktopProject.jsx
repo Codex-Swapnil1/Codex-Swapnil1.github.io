@@ -17,6 +17,7 @@ const DesktopProject = () => {
           footerbody={item.team}
           links={item.links}
           tags={item.tags}
+          item={item}
             />
           )
         })}

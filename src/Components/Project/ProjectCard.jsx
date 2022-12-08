@@ -1,15 +1,13 @@
 import { Box } from '@mui/joy'
-import { Paper } from '@mui/material'
+import { Paper , Chip } from '@mui/material'
 import React from 'react'
 
 const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
 
-  let data = links
-  console.log(data)
   return (
     <div>ProjectCard
     <Box sx={{
-      width: "85%",
+      width: "95%",
       margin: "auto",
       border: "1px solid red"
     }}>
@@ -17,26 +15,30 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
     <Box
     sx={{
         display: 'flex',
-        width: "95%",
+        width: "75%",
         margin: "auto",
+        flexWrap: "wrap",
         justifyContent:"space-around",
         border: "1px solid green"
     }}
     >
         <Box
         sx={{
-        width: "50%",
+        width: "70%",
+        minWidth: "320px",
         margin: "auto",
-        border: "1px solid yellow"
+        border: "1px solid yellow",
     }}
         >
-          <img style={{width:"100%"}} src={image} alt={title} />
+          <img style={{width:"100%",maxHeight:"350px"}} src={image} alt={title} />
         </Box>
         <Box sx={{
-        width: "48%",
         border: "1px solid orange",
-        textAlign:"left",
-        margin: "auto"
+        textAlign: "left",
+        width:"70%",
+        minWidth: "320px",
+        maxWidth: "820px",
+
     }}>
             <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Details: </span>{body}</Box>
             <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Features: </span>{features}</Box>
@@ -49,25 +51,35 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
              }}
              >
 
-                <Box><a href={data.hrefg}> {data.textg} </a></Box>
-                <Box><a href={data.hrefl}> {data.textl} </a></Box>
+                <Box><a href={links.hrefg} target="_blank"
+       rel="noopener"> {links.textg} </a></Box>
+                <Box><a href={links.hrefl} target="_blank"
+       rel="noopener"> {links.textl} </a></Box>
 
             </Box>
         </Box>
     </Box>
     <Box
     sx={{
-        width: "93%",
+        maxWidth: "53%",
+        minWidth: "320px",
         margin: "auto",
-        border: "1px solid yellow"
-    }}>techstack
-    {/* {tags.map((list,i)=>{
+        color: "lightgray",
+        border: "1px solid pink"
+    }}> Techstack
+    <Box >
+    {tags.map((list,i)=>{
       return (
-        <Paper>
-          {list[i]}
-        </Paper>
+
+        <Chip sx={{
+          backgroundColor: "lightgray",
+          boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",
+          margin: "5px"
+        }} label={list} variant="outlined" />
+
       )
-    })} */}
+    })}
+    </Box>
     </Box>
     </Box>
     </div>

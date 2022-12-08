@@ -1,6 +1,5 @@
 
 import React from 'react'
-import Grid from '@mui/material/Grid';
 import { fronted } from './skills';
 import SkillsCard from './SkillsCard';
 import { experimentalStyled as styled } from '@mui/material/styles';
@@ -18,7 +17,7 @@ const FrontEndSkill = () => {
   return (
     <Box>
 
-    <Box sx={{ display:"flex",flexWrap:"wrap" ,gap:2, margin :"auto",justifyContent:"center"}}>
+    <Box sx={{ display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(120px,1fr))",gap:3}}>
 
         {fronted.map((item)=>(
          (

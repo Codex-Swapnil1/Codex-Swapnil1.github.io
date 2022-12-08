@@ -55,13 +55,15 @@
   .nav__container__actions {
     display: inline-flex;
     flex-flow: row nowrap;
+    text-align: center;
     flex: 1;
-    padding-right: 3%
+    padding-right: 30px;
   }
 
   .active {
     font-weight: bolder;
     color: #eaf2fa;
+    text-align: center;
   }
 
   .nav__container__actions ul {
@@ -69,11 +71,12 @@
     gap: 1rem;
     font-size: 1.1rem;
     list-style: none;
-    padding: 0;
   }
 
   .nav__container__actions li {
     cursor: pointer;
+    text-align: left;
+   padding: 1px 5px;
   }
 
   .nav__container__actions li:hover {

@@ -32,7 +32,7 @@ export default function BasicMenu() {
   };
   const saveFile = () => {
     FileSaver.saveAs(
-      process.env.PUBLIC_URL + "/resources/resume.pdf",
+      process.env.PUBLIC_URL + "/resources/Swapnil_Parchake_Resume.pdf",
       "Swapnilresume.pdf"
     );
     };

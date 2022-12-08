@@ -42,6 +42,12 @@ const uilab = [
         "icon": "skills/material-ui.svg",
         "title": "Material UI"
     },
+    {
+        "id": 24,
+        "icon": "skills/styled-components.png",
+        "title": "Styled-Components"
+
+    }
 ]
 
 const backend = [

@@ -6,7 +6,7 @@ import TechnicalSkills from './TechnicalSkills'
 const DesktopSkill = () => {
   return (
     <div>
-    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", paddingBottom:"30px"}}>Skills</h1>
+    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>Skills</h1>
     <Box sx={{display:"flex", width:"85%", margin:"auto", justifyContent:"space-around"}}>
 
         <Box sx={{width: "40%",margin:"0px 50px"}}>

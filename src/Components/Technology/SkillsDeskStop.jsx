@@ -10,7 +10,7 @@ import Uilab from './Uilab';
 const SkillsDeskStop = () => {
   return (
     <div>
-    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", paddingBottom:"30px"}}>TechStack</h1>
+    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>TechStack</h1>
     <Box fontSize={"20px"} width={"85%"} margin={"auto"}>I love to learn new things and experiment with new technologies.
 These are some of the major languages, technologies, tools and platforms I have worked with:</Box>
     <Box justifyContent={"center"}>

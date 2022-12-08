@@ -24,6 +24,7 @@
   .artcustomlist li:before {
     content: '';
     position: absolute;
+    font-size: 18px;
     top: 4px;
     left: -25px;
     width: 10px;
@@ -34,7 +35,6 @@
     box-shadow: 0 3px 8px 0 var(--color-box-shadow-0);
   }
   .artlgtext {
-    font-size: 18px;
     padding: 0% 2%;
 
   }

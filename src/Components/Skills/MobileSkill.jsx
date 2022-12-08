@@ -49,7 +49,7 @@ export default function MobileSkill() {
 
   return (
     <Box sx={{ width: "100%" , justifyContent:"center", margin:"auto"}}>
-    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", paddingBottom:"30px"}}>Skills</h1>
+    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>Skills</h1>
       <Box sx={{  maxWidth: { xs: 320 , sm: 480},
         backgroundColor:"black",
         border:"1px solid gray",

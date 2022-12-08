@@ -82,10 +82,10 @@ export default function SkillsMobile() {
         <BackEndSkill/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Deployments/>
+      <Uilab/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Uilab/>
+      <Deployments/>
       </TabPanel>
       <TabPanel value={value} index={4}>
         <ToolsAndPlatform/>

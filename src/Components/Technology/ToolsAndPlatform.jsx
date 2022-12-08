@@ -19,7 +19,7 @@ const ToolsAndPlatform = () => {
 
 
 
-    <Box sx={{ display:"flex",flexWrap:"wrap" ,gap:2, margin :"auto",justifyContent:"center"}}>
+    <Box sx={{ display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(120px,1fr))",gap:3}}>
 
         {stools.map((item)=>(
          (

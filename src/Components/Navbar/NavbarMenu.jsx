@@ -14,7 +14,7 @@ export const NavbarMenu = () => {
   const saveFile = () => {
     FileSaver.saveAs(
       process.env.PUBLIC_URL + "/resources/Swapnil_Parchake_Resume.pdf",
-      "Swapnilresume.pdf"
+      "Swapnil_Parchake_Resume.pdf"
     );
     };
   return (
@@ -28,7 +28,7 @@ export const NavbarMenu = () => {
             </li>
             <li>
               <Link activeClass={navstyle.active} smooth spy to="about">
-              <FaceIcon sx={{paddingLeft:"25%"}}/> <br/> About
+              <FaceIcon sx={{paddingLeft:"25%"}}/> <br/> About Me
               </Link>
             </li>
             <li>

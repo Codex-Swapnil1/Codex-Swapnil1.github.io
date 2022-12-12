@@ -5,39 +5,39 @@ import React from 'react'
 const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
 
   return (
-    <div>ProjectCard
+    <div>
     <Box sx={{
       width: "95%",
       margin: "auto",
-      border: "1px solid red"
+      marginBottom:"30px",
     }}>
-    <Box>{title}</Box>
+    <Box sx={{padding:"10px",color:"lightblue"}}>{title}</Box>
     <Box
     sx={{
         display: 'flex',
         width: "75%",
         margin: "auto",
         flexWrap: "wrap",
-        justifyContent:"space-around",
-        border: "1px solid green"
+        justifyContent:"space-around"
     }}
     >
         <Box
         sx={{
         width: "70%",
         minWidth: "320px",
-        margin: "auto",
-        border: "1px solid yellow",
+        margin: "auto"
     }}
         >
           <img style={{width:"100%",maxHeight:"350px"}} src={image} alt={title} />
         </Box>
         <Box sx={{
-        border: "1px solid orange",
+        border: "1px solid gray",
         textAlign: "left",
         width:"70%",
         minWidth: "320px",
         maxWidth: "820px",
+        paddingTop: "10px",
+        fontSize:"17px"
 
     }}>
             <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Details: </span>{body}</Box>
@@ -46,26 +46,32 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
             <Box
              sx={{
                 display: 'flex',
-                gap:"10px",
-                justifyContent: 'center'
+                gap:"20px",
+                justifyContent: 'center',
+                margin:"10px"
              }}
              >
+                <Box sx={{padding:"6px 10px", backgroundColor:"lightgray",borderRadius:"5px"}}>
+                <a style={{textDecoration:"none",color:"black"}}
+                 href={links.hrefg} target="_blank" rel="noopener"> {links.textg} </a>
+                </Box>
 
-                <Box><a href={links.hrefg} target="_blank"
-       rel="noopener"> {links.textg} </a></Box>
-                <Box><a href={links.hrefl} target="_blank"
-       rel="noopener"> {links.textl} </a></Box>
+                <Box sx={{padding:"6px 10px", backgroundColor:"lightgray",borderRadius:"5px"}}>
+                <a
+                style={{textDecoration:"none",color:"black"}}
+                 href={links.hrefl} target="_blank" rel="noopener"> {links.textl} </a>
+                </Box>
 
             </Box>
         </Box>
     </Box>
     <Box
     sx={{
-        maxWidth: "53%",
+        maxWidth: "52%",
         minWidth: "320px",
         margin: "auto",
         color: "lightgray",
-        border: "1px solid pink"
+        border: "1px solid gray",
     }}> Techstack
     <Box >
     {tags.map((list,i)=>{

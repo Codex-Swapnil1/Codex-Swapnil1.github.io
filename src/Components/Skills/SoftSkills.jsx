@@ -7,7 +7,7 @@ import SkillsList from './SkillsList'
 const SoftSkills = () => {
   return (
     <div>
-    <Box><SkillsList key ={softskill.id} skills={softskill}/></Box>
+    <Box sx={{fontSize:"16px"}}><SkillsList key ={softskill.id} skills={softskill}/></Box>
     </div>
   )
 }

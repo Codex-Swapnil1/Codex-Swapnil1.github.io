@@ -5,7 +5,7 @@ import TechBox from './TechBox'
 const TechnicalSkills = () => {
   return (
     <div>
-    <Box sx={{margin:"auto"}}><TechBox/></Box>
+    <Box sx={{margin:"auto",fontSize:"16px"}}><TechBox/></Box>
     </div>
   )
 }

@@ -11,7 +11,7 @@ export default function AboutDesktop() {
         {/* content */}
         <div style={{textAlign:"left"}}>
           <div className={style.artcard}>
-          <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>About</h1>
+          <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>About Me</h1>
           <Stack
           direction="row"
           justifyContent="space-between"
@@ -28,18 +28,12 @@ export default function AboutDesktop() {
           </div>
 
         <div style={{width:"60%"}}>
-        <p className={style.artlgtext} style={{width:"90%", paddingTop:"0px", marginTop:"0px"}}>
-              <i>
+        <p style={{width:"90%",lineHeight:"25px", paddingTop:"0px", marginTop:"0px"}}>
+
               Team collaboration, Resourceful, and detail-oriented Full Stack Web Developer with expertise in creating ready-to-use websites.
               Looking for a challenging role in a growth-oriented work environment organization.
-              I like to explore more in this Domain and Specialize in Fronted and BackEnd frameworks
-              </i>
-            </p>
-            <p style={{paddingLeft:"2%", fontSize:"18px"}}>
-              Personal Intrest are <br/>
-            • Playing Basketball and Volleyball. <br/>
-            • Explore new places and traveling. <br/>
-            • Watching Anime.
+              I like to explore more in this Domain and Specialize in Fronted and BackEnd frameworks.
+
             </p>
         </div>
           </Stack>

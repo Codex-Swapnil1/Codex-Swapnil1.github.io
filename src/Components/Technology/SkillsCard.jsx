@@ -11,7 +11,7 @@ export default function SkillsCard({title, icon,id,Item}) {
 
       <Divider sx={{margin:"10px 0px"}}/>
 
-        <Box sx={{fontWeight:"bold",fontSize:"15px",color:"gray"}}>
+        <Box sx={{fontWeight:"bold",fontSize:"16px",color:"gray"}}>
           {title}
         </Box>
 

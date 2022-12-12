@@ -52,6 +52,9 @@ export default function SkillsMobile() {
 
   return (
     <Box sx={{ width: "100%" , justifyContent:"center", margin:"auto"}}>
+    <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>TechStack</h1>
+    <Box  sx={{fontSize:"16px",lineHeight:"20px"}} width={"85%"} margin={"auto"} textAlign={"left"} marginBottom={"30px"}>I love to learn new things and experiment with new technologies.
+These are some of the major languages, technologies, tools and platforms I have worked with:</Box>
       <Box
        sx={{ maxWidth: { xs: 320 , sm: 480},
         backgroundColor:"black",

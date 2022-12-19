@@ -28,10 +28,8 @@ export default function NavBar() {
       </Media>
       </header>
       <section id="home"> <Home/></section>
-
       <section id="about"><About/></section>
-      <section id="techstack"><TechStack/></section>
-      <section id="skills"><Skills/></section>
+      <section id="skills"><TechStack/></section>
       <section id="projects"><Projects/></section>
       <section id="contact"><Contact/></section>
     </div>

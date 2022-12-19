@@ -4,12 +4,13 @@ import Stack from '@mui/material/Stack';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import FileOpenIcon from '@mui/icons-material/FileOpen';
 
 const SocialMedia = () => {
   return (
     <div style={{paddingTop:"30px"}} >
 
-    <Stack spacing={2} direction="row" sx={{boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"200px"}}>
+    <Stack spacing={2} direction="row" sx={{boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"280px"}}>
       <IconButton
        aria-label="LinkedIn"
        href="https://linkedin.com/in/swapnilparchake"
@@ -33,6 +34,15 @@ const SocialMedia = () => {
       aria-label="MailOutline"
       >
       <MailOutlineIcon fontSize="inherit" sx={{fontSize:"40px",color:"lightblue"}} />
+      </IconButton>
+
+      <IconButton
+       href="https://drive.google.com/file/d/1tDlKA8oN7c_-eGfz7EYgZQvBzgOUeJDs/view?usp=share_link"
+      aria-label="Resume"
+      target="_blank"
+       rel="noopener"
+      >
+      <FileOpenIcon sx={{fontSize:"40px",color:"lightblue"}}/>
       </IconButton>
     </Stack>
 

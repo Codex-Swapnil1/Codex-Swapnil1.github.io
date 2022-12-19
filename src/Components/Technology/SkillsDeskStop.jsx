@@ -11,8 +11,6 @@ const SkillsDeskStop = () => {
   return (
     <div>
     <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>TechStack</h1>
-    <Box fontSize={"18px"} width={"85%"} margin={"auto"} textAlign={"left"}>I love to learn new things and experiment with new technologies.
-These are some of the major languages, technologies, tools and platforms I have worked with:</Box>
     <Box justifyContent={"center"}>
         <Box
         sx={{
@@ -23,23 +21,32 @@ These are some of the major languages, technologies, tools and platforms I have 
 
         >
             <Box >
-            <Box m="20px 0px" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"}}>FrontEndSkill</Box>
+
+            <Box m="20px auto"
+            sx={{color:"lightgray",
+             fontSize:"25px",
+             boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",
+             width:"fit-content",
+             padding:"10px 30px",
+             }}>Frontend Skill</Box>
+
+
             <FrontEndSkill/>
             </Box>
-            <Box>
-            <Box m="20px 0px" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"}}>BackEndSkill</Box>
+            <Box >
+            <Box m="20px auto"  sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"fit-content",padding:"10px 30px"}}>Backend Skill</Box>
             <BackEndSkill/>
             </Box>
             <Box>
-            <Box m="20px 0px" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"}}> Ui Library</Box>
+            <Box m="20px auto" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"fit-content",padding:"10px 30px"}}> Ui Library</Box>
             <Uilab/>
             </Box>
             <Box>
-            <Box m="20px 0px" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"}}>Deployments</Box>
+            <Box m="20px auto" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"fit-content",padding:"10px 30px"}}>Deployments</Box>
             <Deployments/>
             </Box>
             <Box>
-            <Box m="20px 0px" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"}}>Tools And Platform</Box>
+            <Box m="20px auto" sx={{color:"lightgray", fontSize:"25px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"fit-content",padding:"10px 30px"}}>Tools And Platform</Box>
              <ToolsAndPlatform/>
              </Box>
         </Box>

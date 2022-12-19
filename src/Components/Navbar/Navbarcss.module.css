@@ -8,7 +8,7 @@
     display: grid;
     /* place-items: center; */
     font-weight: bold;
-    padding-top: 80px;
+    padding-top: 50px;
     min-width: 320px;
   }
 
@@ -69,7 +69,7 @@
   .nav__container__actions ul {
     display: flex;
     gap: 1rem;
-    font-size: 1.1rem;
+    font-size: 18px;
     list-style: none;
   }
 
@@ -81,5 +81,5 @@
 
   .nav__container__actions li:hover {
     text-decoration: underline;
-    color: whitesmoke;
+    color: orange;
   }

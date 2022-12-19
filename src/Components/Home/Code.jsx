@@ -6,13 +6,13 @@ import SocialMedia from './SocialMedia';
 const Code = () => {
 
 const Lines = [
-  "Hello World! I am Swapnil",
+  "Hello World!",
   "I am a Full Stack Web Developer.",
   "I Am a Learner"
 ]
 
   return (
-    <div style={{textAlign:"left",paddingLeft:"80px", maxWidth:"500px"}}>
+    <div style={{textAlign:"left",paddingLeft:"40px", maxWidth:"600px"}}>
     <div style={{width:"100%",color:"orange",fontSize:"25px"}}>
     <h1 style={{marginTop:"20px",marginBottom:"0px",
     }}>Hi</h1>

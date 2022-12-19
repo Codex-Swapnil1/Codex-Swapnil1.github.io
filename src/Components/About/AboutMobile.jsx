@@ -12,23 +12,30 @@ export default function AboutMobile() {
           <div className={style.artcard}>
           <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightgray", paddingBottom:"30px"}}>About Me</h1>
           <div style={{paddingLeft:"3%", textAlign:"center", maxWidth:"260px",margin:"auto"}}>
-          <img style={{width:"100%", borderRadius:"10px" }} alt="Remy Sharp" src="./swapnilformal-prev.png" />
-          </div>
-          <div style={{textAlign:"center", color:"lightgray"}}>
-          <h1>Swapnil Parchake</h1>
-          <h3>Full Stack Web Developer</h3>
+          <img style={{width:"100%", borderRadius:"10px" }} alt="Remy Sharp" src="pngwing.png" />
           </div>
 
-            <p style={{fontSize:"16px",lineHeight:"20px"}}>
+            <p style={{fontSize:"16px",lineHeight:"1.4"}}>
 
               Team collaboration, Resourceful, and detail-oriented Full Stack Web Developer with expertise in creating ready-to-use websites.
               Looking for a challenging role in a growth-oriented work environment organization.
               I like to explore more in this Domain and Specialize in Fronted and BackEnd frameworks.
-
             </p>
-            <div style={{maxWidth:"1200px",margin:"auto"}} >
-              <img style={{width:"100%"}} src="./quote.jpeg" alt="quote"/>
+            <div>
+            Quote:
+            <div
+            style={{boxShadow: "rgba(212,212,212, 0.5) 0px 0px 3px 3px",
+            width:"90%",
+             fontFamily:"monospace",
+             padding:"10px 20px",
+             lineHeight:"1.4",
+             marginTop: "10px",
+             fontSize:"16px"
+             }}>
+              Its Not About Ideas <br/> It's About Making Ideas happens
             </div>
+            </div>
+
           </div>
         </div>
       </div>

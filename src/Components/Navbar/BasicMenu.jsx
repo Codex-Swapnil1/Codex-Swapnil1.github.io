@@ -13,10 +13,9 @@ import { Scrollbars } from 'react-custom-scrollbars'
 const options = [
    {id: 1, name1:"Home",name2:"home"} ,
    {id: 2, name1:"About Me",name2:"about"} ,
-   {id: 3, name1:"TechStack",name2: "techstack"} ,
-   {id: 4, name1:"Skills",name2:"skills"} ,
-   {id: 5, name1:"Projects",name2:"projects"} ,
-   {id: 6, name1:"Contact",name2:"contact"} ,
+   {id: 3, name1:"Technical",name2 : "skills"} ,
+   {id: 4, name1:"Projects",name2:"projects"} ,
+   {id: 5, name1:"Contact",name2:"contact"} ,
 ];
 
 const ITEM_HEIGHT = 60;

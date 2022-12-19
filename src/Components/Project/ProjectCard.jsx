@@ -40,9 +40,31 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
         fontSize:"17px"
 
     }}>
-            <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Details: </span>{body}</Box>
+            <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Description: </span>{body}</Box>
             <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Features: </span>{features}</Box>
             <Box style={{padding:"5px 20px"}}>{footerbody}</Box>
+            <Box
+    sx={{
+        minWidth: "320px",
+        margin: "auto",
+        color: "lightgray",
+        border: "1px solid gray",
+        textAlign: "center"
+    }}>
+    <Box >
+    {tags.map((list,i)=>{
+      return (
+
+        <Chip sx={{
+          backgroundColor: "lightgray",
+          boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",
+          margin: "5px"
+        }} label={list} />
+
+      )
+    })}
+    </Box>
+    </Box>
             <Box
              sx={{
                 display: 'flex',
@@ -65,28 +87,7 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
             </Box>
         </Box>
     </Box>
-    <Box
-    sx={{
-        maxWidth: "52%",
-        minWidth: "320px",
-        margin: "auto",
-        color: "lightgray",
-        border: "1px solid gray",
-    }}> Techstack
-    <Box >
-    {tags.map((list,i)=>{
-      return (
 
-        <Chip sx={{
-          backgroundColor: "lightgray",
-          boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",
-          margin: "5px"
-        }} label={list} variant="outlined" />
-
-      )
-    })}
-    </Box>
-    </Box>
     </Box>
     </div>
   )

@@ -23,39 +23,33 @@ export const NavbarMenu = () => {
           <ul>
             <li>
               <Link activeClass={navstyle.active} smooth spy to="home">
-               <HomeIcon sx={{paddingLeft:"20%"}}/> <br/> Home
+               Home
               </Link>
             </li>
             <li>
               <Link activeClass={navstyle.active} smooth spy to="about">
-              <FaceIcon sx={{paddingLeft:"25%"}}/> <br/> About Me
-              </Link>
-            </li>
-            <li>
-              <Link activeClass={navstyle.active} smooth spy to="techstack">
-              <CodeIcon sx={{paddingLeft:"30%"}}/> <br/> Technical
+             About Me
               </Link>
             </li>
             <li>
               <Link activeClass={navstyle.active} smooth spy to="skills">
-              <DeveloperModeTwoToneIcon sx={{paddingLeft:"25%"}}/> <br/>
               Skills
               </Link>
             </li>
             <li>
               <Link activeClass={navstyle.active} smooth spy to="projects">
-              <FolderIcon sx={{paddingLeft:"30%"}}/> <br/> Projects
+             Projects
               </Link>
             </li>
             <li>
               <Link activeClass={navstyle.active} smooth spy to="contact">
-               <PeopleAltIcon sx={{paddingLeft:"28%"}}/> <br/> Contact
+               Contact
               </Link>
             </li>
             <li style={{color:"lightgray",
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}}
             onClick={saveFile}>
-            <FileDownloadIcon sx={{paddingLeft:"25%"}}/> <br/> Resume
+             Resume
             </li>
           </ul>
         </nav>

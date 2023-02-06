@@ -4,7 +4,7 @@ import Code from './Code'
 export const BannerMobile = () => {
   return (
     <div >
-    <div >
+    <div style={{margin:"auto"}}>
         <Code/>
     </div>
       <div style={{ maxWidth:"350px", paddingTop:"10px",margin:"auto"}}>

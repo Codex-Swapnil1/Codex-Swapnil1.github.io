@@ -5,8 +5,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import FileOpenIcon from '@mui/icons-material/FileOpen';
+import FileSaver from 'file-saver';
 
 const SocialMedia = () => {
+  const saveFile = () => {
+    FileSaver.saveAs(
+      process.env.PUBLIC_URL + "/resources/Swapnil_Parchake_Resume.pdf",
+      "Swapnil_Parchake_Resume.pdf"
+    );
+    };
   return (
     <div style={{paddingTop:"30px"}} >
 
@@ -41,6 +48,7 @@ const SocialMedia = () => {
       aria-label="Resume"
       target="_blank"
        rel="noopener"
+       onClick={saveFile}
       >
       <FileOpenIcon sx={{fontSize:"40px",color:"lightblue"}}/>
       </IconButton>

@@ -11,7 +11,7 @@ const SocialMedia = () => {
   const saveFile = () => {
     FileSaver.saveAs(
       process.env.PUBLIC_URL + "/resources/Swapnil_Parchake_Resume.pdf",
-      "Swapnil_Parchake_Resume.pdf"
+      "fw15_052-Swapnil-Parchake-Resume.pdf"
     );
     };
   return (

@@ -14,7 +14,7 @@ export const NavbarMenu = () => {
   const saveFile = () => {
     FileSaver.saveAs(
       process.env.PUBLIC_URL + "/resources/Swapnil_Parchake_Resume.pdf",
-      "Swapnil_Parchake_Resume.pdf"
+      "fw15_052-Swapnil-Parchake-Resume.pdf"
     );
     };
   return (
@@ -48,7 +48,10 @@ export const NavbarMenu = () => {
             </li>
             <li style={{color:"lightgray",
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}}
-            onClick={saveFile}>
+            href="https://drive.google.com/file/d/1tDlKA8oN7c_-eGfz7EYgZQvBzgOUeJDs/view?usp=share_link"
+        target="_blank"
+       rel="noopener"
+       onClick={saveFile}>
              Resume
             </li>
           </ul>

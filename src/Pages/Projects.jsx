@@ -1,10 +1,10 @@
 import React from 'react'
 import DesktopProject from '../Components/Project/DesktopProject'
-import ProjectCard from '../Components/Project/ProjectCard'
+// import ProjectCard from '../Components/Project/ProjectCard'
 
 export const Projects = () => {
   return (
-    <div>Projects
+    <div id="projects">Projects
     <DesktopProject/>
     {/* <ProjectCard/> */}
     </div>

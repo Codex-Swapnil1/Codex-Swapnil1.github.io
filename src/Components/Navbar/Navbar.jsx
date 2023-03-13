@@ -8,7 +8,7 @@ import  About  from "../../Pages/About";
 import { TechStack } from "../../Pages/TeckStack";
 import { Projects } from "../../Pages/Projects";
 import { Contact } from "../../Pages/Contact";
-import { Skills } from "../../Pages/Skills";
+// import { Skills } from "../../Pages/Skills";
 
 
 export default function NavBar() {

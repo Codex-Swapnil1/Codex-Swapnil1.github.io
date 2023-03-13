@@ -3,7 +3,7 @@ import Banner from '../Components/Home/Banner'
 
 export const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Banner/>
     </div>
   )

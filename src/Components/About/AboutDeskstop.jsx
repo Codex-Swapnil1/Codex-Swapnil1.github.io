@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 
 export default function AboutDesktop() {
   return (
+    <div id="about" class="about section">
     <div className='containerfluid'>
       <div style={{height:"80vh"}}>
         {/* header */}
@@ -48,6 +49,7 @@ export default function AboutDesktop() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

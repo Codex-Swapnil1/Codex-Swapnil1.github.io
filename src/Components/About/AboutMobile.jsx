@@ -3,6 +3,7 @@ import style from "./about.module.css";
 
 export default function AboutMobile() {
   return (
+    <div id="about" class="about section">
     <div className='containerfluid'>
       <div>
         {/* header */}
@@ -39,6 +40,7 @@ export default function AboutMobile() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

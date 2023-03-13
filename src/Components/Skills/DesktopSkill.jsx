@@ -5,7 +5,7 @@ import TechnicalSkills from './TechnicalSkills'
 
 const DesktopSkill = () => {
   return (
-    <div>
+    <div id="skills">
     <h1 style={{textAlign:"center", fontSize:"30px" ,color:"lightblue", marginBottom:"30px"}}>Skills</h1>
     <Box sx={{display:"flex", width:"85%", margin:"auto", justifyContent:"space-around"}}>
 

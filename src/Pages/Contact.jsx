@@ -9,7 +9,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 export const Contact = () => {
   return (
-    <TableCompo>
+    <TableCompo id="contact">
     <div style={{margin:"auto",width:"85%"}}>
     <Box className='contactHeader'>
     Contact

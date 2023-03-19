@@ -26,7 +26,7 @@ export default function AboutDesktop() {
 
         <div style={{width:"60%"}}>
 
-        <p style={{width:"90%",lineHeight:"1.6", fontSize:"18px" ,paddingTop:"0px", marginTop:"0px"}}>
+        <p id="user-detail-intro" style={{width:"90%",lineHeight:"1.6", fontSize:"18px" ,paddingTop:"0px", marginTop:"0px"}}>
               Team collaboration, Resourceful, and detail-oriented Full Stack Web Developer with expertise in creating ready-to-use websites.
               Looking for a challenging role in a growth-oriented work environment organization.
               I like to explore more in this Domain and Specialize in Fronted and Backend frameworks.

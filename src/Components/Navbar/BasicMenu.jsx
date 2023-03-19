@@ -79,6 +79,7 @@ export default function BasicMenu() {
         <Divider/>
         <MenuItem onClick={handleClose}>
         <Button
+        id="resume-link-1"
         href="https://drive.google.com/file/d/1tDlKA8oN7c_-eGfz7EYgZQvBzgOUeJDs/view?usp=share_link"
         target="_blank"
        rel="noopener"

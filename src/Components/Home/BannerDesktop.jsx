@@ -11,7 +11,7 @@ export const BannerDesktop = () => {
         <div style={{width:"50%",margin:"auto"}}>
         <Code/>
         </div>
-      <div style={{ width:"40%"}}>
+      <div style={{ width:"40%"}} class = "home-img">
    <img style={{ maxWidth:"250px",borderRadius:"10px",boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px"}}  src="./swapnilformal.jpg" alt="profile" width="100%" />
       </div>
       </div>

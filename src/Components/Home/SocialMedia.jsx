@@ -19,6 +19,7 @@ const SocialMedia = () => {
 
     <Stack spacing={2} direction="row" sx={{boxShadow: "rgba(212,212,212, 0.3) 0px 0px 3px 3px",width:"280px"}}>
       <IconButton
+      id="contact-linkedin"
        aria-label="LinkedIn"
        href="https://linkedin.com/in/swapnilparchake"
        target="_blank"
@@ -28,6 +29,7 @@ const SocialMedia = () => {
        </IconButton>
 
       <IconButton
+      id="contact-github"
        href="https://github.com/Codex-Swapnil1"
       aria-label="GitHub"
       target="_blank"
@@ -37,6 +39,7 @@ const SocialMedia = () => {
       </IconButton>
 
       <IconButton
+      id="contact-email"
       href="mailto:swapnilparchakewrd2@gmail.com"
       aria-label="MailOutline"
       >
@@ -44,6 +47,7 @@ const SocialMedia = () => {
       </IconButton>
 
       <IconButton
+      id="resume-button-2"
        href="https://drive.google.com/file/d/1tDlKA8oN7c_-eGfz7EYgZQvBzgOUeJDs/view?usp=share_link"
       aria-label="Resume"
       target="_blank"

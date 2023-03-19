@@ -1,17 +1,19 @@
 import { Box } from '@mui/joy'
-import { Paper , Chip } from '@mui/material'
+import { Chip } from '@mui/material'
 import React from 'react'
 
 const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
 
   return (
     <div>
-    <Box sx={{
+    <Box
+    className="project-card"
+    sx={{
       width: "95%",
       margin: "auto",
-      marginBottom:"30px",
+      marginBottom:"30px"
     }}>
-    <Box sx={{padding:"10px",color:"lightblue"}}>{title}</Box>
+    <Box class="project-title" sx={{padding:"10px",color:"lightblue"}}>{title}</Box>
     <Box
     sx={{
         display: 'flex',
@@ -40,7 +42,7 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
         fontSize:"17px"
 
     }}>
-            <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Description: </span>{body}</Box>
+            <Box className="project-description" style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Description: </span>{body}</Box>
             <Box style={{padding:"5px 20px"}}><span style={{color:"lightgray", padding:"0px 5px"}}>Features: </span>{features}</Box>
             <Box style={{padding:"5px 20px"}}>{footerbody}</Box>
             <Box
@@ -51,7 +53,7 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
         border: "1px solid gray",
         textAlign: "center"
     }}>
-    <Box >
+    <Box class="project-tech-stack">
     {tags.map((list,i)=>{
       return (
 
@@ -73,12 +75,12 @@ const ProjectCard = ({image,title,body,features,footerbody,links,tags}) => {
                 margin:"10px"
              }}
              >
-                <Box sx={{padding:"6px 10px", backgroundColor:"lightgray",borderRadius:"5px"}}>
+                <Box className="project-github-link" sx={{padding:"6px 10px", backgroundColor:"lightgray",borderRadius:"5px"}}>
                 <a style={{textDecoration:"none",color:"black"}}
                  href={links.hrefg} target="_blank" rel="noopener"> {links.textg} </a>
                 </Box>
 
-                <Box sx={{padding:"6px 10px", backgroundColor:"lightgray",borderRadius:"5px"}}>
+                <Box class="project-deployed-link" sx={{padding:"6px 10px", backgroundColor:"lightgray",borderRadius:"5px"}}>
                 <a
                 style={{textDecoration:"none",color:"black"}}
                  href={links.hrefl} target="_blank" rel="noopener"> {links.textl} </a>

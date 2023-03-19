@@ -16,7 +16,7 @@ export default function AboutMobile() {
           <img style={{width:"100%", borderRadius:"10px" }} alt="Remy Sharp" src="pngwing.png" />
           </div>
 
-            <p style={{fontSize:"16px",lineHeight:"1.4"}}>
+            <p id="user-detail-intro" style={{fontSize:"16px",lineHeight:"1.4"}}>
 
               Team collaboration, Resourceful, and detail-oriented Full Stack Web Developer with expertise in creating ready-to-use websites.
               Looking for a challenging role in a growth-oriented work environment organization.
